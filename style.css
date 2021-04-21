@@ -1,0 +1,168 @@
+* {padding: 0; margin: 0; vertical-align: baseline; list-style: none; border: 0; box-sizing: border-box;}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("imgs/pexels-photo-1439227.webp") ;
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #09076d 0%, #000000 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+
+
+.nav-links{
+    text-decoration: none;
+    color: rgba(253, 253, 253, 0.7);
+}
+
+
+.logo img{
+    display: inline-block;
+    margin-left: 20px;
+    width: 20%;
+    margin-top: 10px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.container{
+    width: 1000px;
+    height: 550px;
+    margin: 80px auto;
+    display: flex;
+}
+
+.col {
+    height:100%;
+    flex: 1;
+    color: rgb(190, 190, 190);
+    padding: 25px;
+    position: relative;
+    transition: 0.6s;
+
+
+}
+
+.col:nth-child(1){
+    background: rgb(3, 1, 19);
+    margin: 20px;
+}
+
+.col:nth-child(2){
+    background: rgb(9, 2, 68);
+    margin-top: 20px;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.botao{
+    display: none;
+}
+
+.botao button{ 
+    border: 1px solid ;
+    background: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: rgb(192, 190, 190);
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    
+   
+}
+
+.col p{
+    color: rgb(167, 164, 161);
+}
+
+.col img{
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.col:nth-child(2) img {
+    width: 273px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.col:hover{
+    flex-grow: 1.5;
+
+}
+
+.col:hover .botao{
+    display: block;
+}
+
+.col:hover h2{
+    text-align: left;
+}
